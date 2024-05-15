@@ -16,7 +16,7 @@ export default {
         "text-green": "#5FE26C",
         "lightest-green": "#EDFFEF",
 
-        "secondary": "#555"
+        "secondary-black": "#555"
       },
 
       fontFamily: {
@@ -27,5 +27,6 @@ export default {
   plugins: [
     daisyui,
   ],
+  important: true,
 }
 

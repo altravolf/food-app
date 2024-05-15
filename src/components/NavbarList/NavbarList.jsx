@@ -6,18 +6,29 @@ function NavbarList() {
     return (
         <>
             <li>
-                <Link>Item 1</Link>
+                <Link to={"/"}>Home</Link>
             </li>
             <li>
                 <details>
-                    <summary>Parent</summary>
+                    <summary>Menu</summary>
                     <ul className="p-2">
-                        <li><Link>Submenu 1</Link></li>
-                        <li><Link>Submenu 2</Link></li>
+                        <li><Link>All</Link></li>
+                        <li><Link>Salad</Link></li>
+                        <li><Link>Pizza</Link></li>
                     </ul>
                 </details>
             </li>
-            <li><Link>Item 3</Link></li>
+            <li>
+                <details>
+                    <summary>Services</summary>
+                    <ul className="p-2">
+                        <li className=""><Link className="w-full">Online Order</Link></li>
+                        <li className=""><Link className="w-full">Table Booking</Link></li>
+                        <li className="w-max"><Link className="w-full">Order Tracking</Link></li>
+                    </ul>
+                </details>
+            </li>
+            <li><Link>Offers</Link></li>
         </>
     );
 }

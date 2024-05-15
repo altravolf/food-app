@@ -2,6 +2,10 @@ import NavbarList from "../NavbarList/NavbarList";
 import './Navbar.scss';
 import logo from "/logo.png";
 import { Link } from "react-router-dom";
+import { PiPhoneCall } from "react-icons/pi";
+import CartIcon from "../CartIcon/CartIcon";
+import SearchIcon from "../SearchIcon/SearchIcon";
+
 
 function Navbar() {
     return (
@@ -26,7 +30,18 @@ function Navbar() {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Button</a>
+
+                    <span className="hidden sm:flex">
+                        {/* Search Icon */}
+                        <SearchIcon />
+                        {/* Cart Icon */}
+                        <CartIcon />
+                    </span>
+
+                    {/* Contact btn */}
+                    <a className="btn bg-light-green rounded-full px-6 text-center hover:shadow-lg hover:bg-light-green  hover:text-white ms-3">
+                        <PiPhoneCall className="inline h-5 w-5" /> Contact
+                    </a>
                 </div>
             </div>
         </header>
